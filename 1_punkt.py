@@ -1,7 +1,8 @@
 import nltk
-import matplotlib.pyplot as plot
+# import matplotlib.pyplot as plot
 
-nltk.download('punkt')
+nltk.download_shell()
+
 # nltk.download('punkt')
 
 text="""welcome you to programming knowledge. Lets start with our first tutorial on NLTK. We shall learn the basics of NLTK here."""
@@ -23,6 +24,6 @@ print(FreqDist(word_tokenize(text)))
 
 print(fd.most_common(4))
 
-fd.plot(30,cumulative=False)
-plot.show()
+# fd.plot(30,cumulative=False)
+# plot.show()
 
