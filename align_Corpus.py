@@ -24,4 +24,4 @@ with open('aligned_corpus.txt', 'w', encoding='utf-8') as fout:
     for src_sent, trg_sents in sent_pairs.items():
         for trg_sent in trg_sents:
             # print(f'{src_sent}\t{trg_sent}\n')
-            fout.write(f'{src_sent}\t{trg_sent}\n',)
+            fout.write(f'{src_sent}\n{trg_sent}\n\n',)
