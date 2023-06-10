@@ -11,6 +11,7 @@ target_words = word_tokenize(target_sentence)
 
 for source_word in source_words:
     print(source_word,'\n')
+    print(target_word,'\n')
 
 source_vocab = set(source_words)
 target_vocab = set(target_words)
