@@ -4,10 +4,21 @@ from googletrans import Translator
 
 translator = Translator()
 
-data = "All work and no play makes jack dull boy. All work and no play makes jack a dull boy."
+data = "shut up"
 
 token = sent_tokenize(data)
 
 for tt in token:
-    translatedText = translator.translate(tt, dest="am")
+    translatedText = translator.translate(tt, dest="en")
     print(translatedText.text)
+
+
+import pyttsx3
+
+synthesizer = pyttsx3.init()
+i=1
+while( i<10):
+    synthesizer.say(translatedText.text) 
+    i=i+1
+synthesizer.runAndWait() 
+synthesizer.stop()

@@ -56,4 +56,4 @@
    
 # The translate() function tokenizes and lemmatizes the input sentence using the word_tokenize() and WordNetLemmatizer() functions from nltk. Then it looks up the synsets (i.e., meanings) of the lemmas using WordNet, and selects the first synset for each lemma that is available in the source language. For each synset, it extracts the translations that are available in the target language and returns them as a list. Finally, it joins the translations together into a string separated by spaces.
 
-# # The get_wordnet_pos() function maps the part of speech tags produced by nltk.pos_tag() to WordNet part of speech tags, which are needed for lemmatization and synset lookup. Note that this is a heuristic function that may not work perfectly, but it should handle most common cases.
+# # The get_wordnet_pos() function maps the part of speech tags produced by nltk.pos_tag() to WordNet part of speech tags, which are needed for lemmatization and synset lookup. Note that this is a heuristic function that may not work perfectly, but it should handle most common cases.  
